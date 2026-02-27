@@ -16,7 +16,7 @@ PROJETOS
     content: "";
     position: absolute;
     left: 0;
-    bottom: -8px;
+    bottom: 0px;
     width: 225px;
     height: 3px;
     background: var(--green);

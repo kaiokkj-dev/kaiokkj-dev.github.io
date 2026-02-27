@@ -8,7 +8,6 @@
     margin: 0 auto;
     padding: 60px 34px;
     text-align: center;
-    /* fundo com glow suave */
     background:
         radial-gradient(80% 80% at 50% 0%, rgba(34,197,94,.14) 0%, rgba(34,197,94,0) 60%),
         linear-gradient(180deg, rgba(16,24,22,.92), rgba(16,24,22,.70));
@@ -21,21 +20,18 @@
 .contact-card h2 {
     font-size: 36px;
     letter-spacing: -0.02em;
+    margin-bottom: 6px;
 }
 .contact-card h2::after{
-    content:"";
-    display:block;
-    width: 293px;
-    height: 3px;
-    background: var(--green);
-    margin: 14px auto 12px;
-    border-radius: 999px;
+    content: none !important;
 }
 .contact-card p{
-    max-width: 720px;
-    margin: 0 auto 34px;
-    color: var(--muted);
-    line-height: 1.60;
+    max-width: 520px;        
+    margin: 0 auto 28px;     
+    font-size: 15.5px;       
+    line-height: 1.75;       
+    letter-spacing: 0.3px;   
+    color: var(--muted);     
 }
 .contact-actions{
     display:flex;
@@ -62,7 +58,6 @@
     border-color: rgba(34,197,94,.55);
     color: var(--text);
 }
-
 .contact-btn.primary:hover{
     transform: translateY(-2px);
     box-shadow: 0 16px 36px rgba(0,0,0,.35);

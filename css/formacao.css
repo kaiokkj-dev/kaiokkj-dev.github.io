@@ -19,10 +19,10 @@ FORMACAO
 .educacao .section-head h2::after{
     content:"";
     display:block;
-    width: 120px;
+    width: 145px;
     height: 3px;
     background: var(--green);
-    margin-top: 12px;
+    margin-top: -5px;
     border-radius: 2px;
 }
 .edu-grid {
@@ -80,7 +80,7 @@ FORMACAO
     border: none;
     height: 1px;
     background: var(--border);
-    margin: -10px 0 100px;
+    margin: 20px 0 10px;
     opacity: 0.6;
 }
 

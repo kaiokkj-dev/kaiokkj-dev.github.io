@@ -4,72 +4,102 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kaio Henrique | Portfólio</title>
-  <!-- Css -->
+
+  <!-- CSS -->
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/hero.css">
   <link rel="stylesheet" href="css/projetos.css">
   <link rel="stylesheet" href="css/sobre.css">
   <link rel="stylesheet" href="css/tech.css">
-  <link rel="stylesheet" href="css/responsive.css">
   <link rel="stylesheet" href="css/formacao.css">
   <link rel="stylesheet" href="css/contato.css">
+  <link rel="stylesheet" href="css/responsive.css">
   <link rel="stylesheet" href="css/reserved.css">
+
+  <!-- Lucide -->
   <script src="https://unpkg.com/lucide@latest"></script>
+
   <!-- Devicon -->
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 </head>
+
 <body>
-  <header class="header">
-    <div class="header-inner">
-      <h1>Kaio Henrique</h1>
-      <nav>
-        <a href="#sobre">Sobre</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#contato">Contato</a>
-      </nav>
-    </div>
+
+  <!-- HEADER -->
+  <header class="header-pill">
+    <nav class="nav-pill">
+      <a href="#home" class="nav-icon" aria-label="Home">
+        <i data-lucide="home"></i>
+      </a>
+
+      <a href="https://www.linkedin.com/in/kaio-henrique-1b01683a8/" target="_blank" rel="noreferrer" class="nav-icon" aria-label="LinkedIn">
+        <i data-lucide="linkedin"></i>
+      </a>
+
+      <a href="https://x.com/ka1okkj" target="_blank" rel="noreferrer" class="nav-icon" aria-label="X">
+        <i data-lucide="x"></i>
+      </a>
+
+      <a href="https://github.com/kaiokkj-dev" target="_blank" rel="noreferrer" class="nav-icon" aria-label="GitHub">
+        <i data-lucide="github"></i>
+      </a>
+
+      <a href="#projetos" class="nav-btn active">Projects</a>
+    </nav>
   </header>
+
+  <!-- MAIN -->
   <main class="container">
+
     <!-- HERO -->
     <section class="hero" id="home">
       <div class="hero-left">
         <p class="hero-kicker">Olá, eu sou</p>
+
         <h1 class="hero-title">
           <span>Kaio Henrique</span>
         </h1>
+
         <p class="hero-role">Frontend Engineer</p>
+
         <p class="hero-desc">
           Desenvolvo aplicações web modernas, rápidas e responsivas, unindo performance,
           experiência do usuário e código limpo para criar produtos digitais eficientes.
         </p>
+
         <div class="hero-cta">
-          <a class="btn btn-primary" href="#" download>
+          <a class="btn btn-primary" href="docs/Kaio_Henrique_CV.pdf" download>
             <span class="btn-icon">⬇</span>
             Resume
           </a>
+
           <span class="badge-available">
             <span class="dot"></span>
             Available
           </span>
         </div>
       </div>
-      <div class="hero right">
+
+      <div class="hero-right">
         <div class="avatar-frame">
           <div class="avatar-wrap">
             <img class="avatar" src="img/profile.jpg" alt="Foto de Perfil">
           </div>
+
           <span class="chip chip-top">user-focused</span>
           <span class="chip chip-right">problem solver</span>
           <span class="chip chip-bottom">clean UI</span>
         </div>
       </div>
     </section>
+
     <!-- SOBRE -->
     <section class="sobre" id="sobre">
       <div class="sobre-wrapper">
         <h2>Sobre</h2>
+
         <p class="about-text">
           Sou Desenvolvedor Front-End focado em transformar ideias em experiências digitais modernas e intuitivas.
           Tenho construído projetos utilizando HTML, CSS e JavaScript, aplicando conceitos de responsividade,
@@ -77,6 +107,7 @@
           Busco evoluir constantemente minhas habilidades técnicas enquanto desenvolvo soluções funcionais,
           acessíveis e bem estruturadas, sempre com atenção à experiência do usuário e à performance.
         </p>
+
         <div class="tech-slider">
           <div class="tech-surface">
             <div class="tech-track">
@@ -84,6 +115,8 @@
               <i class="devicon-css3-plain"></i>
               <i class="devicon-javascript-plain"></i>
               <i class="devicon-git-plain"></i>
+
+              <!-- repetição para loop visual -->
               <i class="devicon-html5-plain"></i>
               <i class="devicon-css3-plain"></i>
               <i class="devicon-javascript-plain"></i>
@@ -93,9 +126,11 @@
         </div>
       </div>
     </section>
+
     <!-- PROJETOS -->
     <section id="projetos" class="projetos">
       <h2>Meus Projetos</h2>
+
       <div class="projetos-container">
         <article class="card">
           <img src="img/projeto5.png" alt="Preview do Projeto VelhaGol" class="card-img" />
@@ -105,21 +140,25 @@
             que traz uma proposta criativa ao incluir desempate por pênaltis, placar persistente
             e interface responsiva.
           </p>
+
           <div class="tags">
             <span>HTML</span>
             <span>CSS</span>
             <span>JS</span>
           </div>
+
           <div class="divider"></div>
+
           <div class="actions">
-            <a href="#" class="btn-sweep" target="_blank" rel="noreferrer">
+            <a href="https://kaiokkj-dev.github.io/VelhaGol1/" class="btn-sweep" target="_blank" rel="noreferrer">
               <span>Demo ↗</span>
             </a>
-            <a href="#" class="btn-sweep outline" target="_blank" rel="noreferrer">
+            <a href="https://github.com/kaiokkj-dev/VelhaGol" class="btn-sweep outline" target="_blank" rel="noreferrer">
               <span>GitHub ↗</span>
             </a>
           </div>
         </article>
+
         <article class="card">
           <img src="img/projeto6.png" alt="Preview do Projeto Lista de Tarefas" class="card-img"/>
           <h3>Lista de Tarefas</h3>
@@ -127,118 +166,126 @@
             Aplicação de lista de tarefas desenvolvida para praticar HTML, CSS e JavaScript,
             com foco em lógica, manipulação do DOM e organização de interface.
           </p>
+
           <div class="tags">
             <span>HTML</span>
             <span>CSS</span>
             <span>JS</span>
           </div>
+
           <div class="divider"></div>
+
           <div class="actions">
-            <a href="#" class="btn-sweep" target="_blank" rel="noreferrer">
+            <a href="https://kaiokkj-dev.github.io/project-01/" class="btn-sweep" target="_blank" rel="noreferrer">
               <span>Demo ↗</span>
             </a>
-            <a href="#" class="btn-sweep outline" target="_blank" rel="noreferrer">
+            <a href="https://github.com/kaiokkj-dev/projeto001" class="btn-sweep outline" target="_blank" rel="noreferrer">
               <span>GitHub ↗</span>
             </a>
           </div>
         </article>
       </div>
-<section class="educacao" id="formacao">
-  <div class="section-head">
-    <h2 class="title-line">Formação Acadêmica</h2>
-  </div>
-  <div class="edu-grid">
-    <!-- Faculdade -->
-    <article class="edu-card">
-      <div class="edu-left">
-        <div class="edu-icon">
-          <i data-lucide="graduation-cap"></i>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- FORMAÇÃO -->
+    <section class="educacao" id="formacao">
+      <div class="section-head">
+        <h2 class="title-line">Formação Acadêmica</h2>
+      </div>
+
+      <div class="edu-grid">
+        <article class="edu-card">
+          <div class="edu-left">
+            <div class="edu-icon">
+              <i data-lucide="graduation-cap"></i>
+            </div>
+            <div class="edu-body">
+              <h3>Bacharelado em Ciências da Computação</h3>
+              <span class="edu-link">Estácio</span>
+            </div>
+          </div>
+          <div class="edu-date">Feb 2026 - Aug 2030</div>
+        </article>
+
+        <article class="edu-card">
+          <div class="edu-left">
+            <div class="edu-icon">
+              <i data-lucide="graduation-cap"></i>
+            </div>
+            <div class="edu-body">
+              <h3>Técnico em Administração</h3>
+              <span class="edu-link">Deputado Heitor Cavalcanti Alencar Furtado</span>
+            </div>
+          </div>
+          <div class="edu-date">Feb 2024 - Nov 2025</div>
+        </article>
+
+        <article class="edu-card">
+          <div class="edu-left">
+            <div class="edu-icon">
+              <i data-lucide="feather"></i>
+            </div>
+            <div class="edu-body">
+              <h3>Curso de Python</h3>
+              <span class="edu-link">Curso em Vídeo</span>
+            </div>
+          </div>
+          <div class="edu-date">Sep 2025 - Jan 2026</div>
+        </article>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- CONTATO -->
+    <section class="contact" id="contato">
+      <div class="contact-card">
+        <h2>Vamos Conversar?</h2>
+        <p>
+          Estou aberto a novas oportunidades, projetos freelance e colaborações.
+          Se você busca dasdadaalguém comprometido com performance, organização e experiência do usuário, vamos conversar.
+        </p>
+
+        <div class="contact-actions">
+          <a class="contact-btn primary" href="mailto:kaiohenriquemalaquias@gmail.com">Enviar E-mail</a>
+          <a class="contact-btn" href="https://www.linkedin.com/in/kaiohenrique-dev/" target="_blank" rel="noreferrer">
+            LinkedIn
+          </a>
         </div>
-        <div class="edu-body">
-          <h3>Bacharelado em Ciências da Computação</h3>
-          <span class="edu-link">Estácio</span>
-        </div>
       </div>
-      <div class="edu-date">
-        Feb 2026 - Aug 2030
-      </div>
-    </article>
-    <!-- Técnico -->
-    <article class="edu-card">
-      <div class="edu-left">
-        <div class="edu-icon">
-          <i data-lucide="graduation-cap"></i>
-        </div>
-        <div class="edu-body">
-          <h3>Técnico em Administração</h3>
-          <span class="edu-link">
-            Deputado Heitor Cavalcanti Alencar Furtado
-          </span>
-        </div>
-      </div>
-      <div class="edu-date">
-        Feb 2024 - Nov 2025
-      </div>
-    </article>
-    <!-- Curso Python -->
-    <article class="edu-card">
-      <div class="edu-left">
-        <div class="edu-icon">
-          <i data-lucide="feather"></i>
-        </div>
-        <div class="edu-body">
-          <h3>Curso de Python</h3>
-          <span class="edu-link">Curso em Vídeo</span>
-        </div>
-      </div>
-      <div class="edu-date">
-        Sep 2025 - Jan 2026
-      </div>
-    </article>
-  </div>
-</section>
-<hr class="section-divider">
-<section class="contact" id="contato">
-    <!-- CONTATO / CTA -->
-  <section class="contact" id="contato">
-    <div class="contact-card">
-      <h2>Vamos Conversar?</h2>
-      <span class="contact-line" aria-hidden="true"></span>
-      <p>
-        Estou aberto a novas oportunidades, projetos freelance e colaborações.
-        Se você busca alguém comprometido com performance, organização e experiência do usuário, vamos conversar.
-      </p>
-      <div class="contact-actions">
-        <a class="contact-btn primary" href="mailto:SEUEMAIL@EMAIL.COM">Enviar E-mail</a>
-        <a class="contact-btn" href="https://www.linkedin.com/in/SEULINK/" target="_blank" rel="noreferrer">
-          LinkedIn
-        </a>
-      </div>
-    </div>
-  </section>
+    </section>
+
   </main>
-  <!-- RESERVED -->
-    <footer class="footer-min">
+
+  <!-- FOOTER -->
+  <footer class="footer-min">
     <div class="footer-min-inner">
       <p>© <span id="year"></span> Kaio Henrique. All rights reserved</p>
+
       <div class="footer-icons">
-        <a href="#" aria-label="Medium" target="_blank" rel="noreferrer">
-          <i data-lucide="letter-text"></i>
+        <a href="mailto:kaiohenriquemalaquias@gmail.com" aria-label="Email">
+          <i data-lucide="mail"></i>
         </a>
-        <a href="#" aria-label="LinkedIn" target="_blank" rel="noreferrer">
+        <a href="https://www.linkedin.com/in/kaiohenrique-dev/" aria-label="LinkedIn" target="_blank" rel="noreferrer">
           <i data-lucide="linkedin"></i>
         </a>
-        <a href="#" aria-label="X" target="_blank" rel="noreferrer">
+        <a href="https://x.com/ka1okkj" aria-label="X" target="_blank" rel="noreferrer">
           <i data-lucide="x"></i>
         </a>
-        <a href="#" aria-label="GitHub" target="_blank" rel="noreferrer">
+        <a href="https://github.com/kaiokkj-dev" aria-label="GitHub" target="_blank" rel="noreferrer">
           <i data-lucide="github"></i>
         </a>
       </div>
     </div>
   </footer>
-<script>
-lucide.createIcons();
-</script>
+
+  <!-- SCRIPTS -->
+  <script>
+    lucide.createIcons();
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script src="js/main.js"></script>
 </body>
 </html>

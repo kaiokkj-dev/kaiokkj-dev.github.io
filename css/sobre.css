@@ -18,7 +18,7 @@ SOBRE
     content: "";
     position: absolute;
     left: 2px;
-    bottom: -10px;
+    bottom: 0px;
     width: 99px;
     height: 3px;
     background: var(--green);

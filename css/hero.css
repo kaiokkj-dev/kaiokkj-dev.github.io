@@ -5,8 +5,9 @@ HERO
     display: grid;
     grid-template-columns: 1.2fr 0.8fr;
     align-items: center;
-    gap: 48px;
+    gap: 10px;
     padding: 48px 0 24px;
+    padding-top: 120px;
 }
 .hero-kicker{
     font-size: 20px;
@@ -120,7 +121,7 @@ HERO
 }
 .chip{
     position: absolute;
-    padding: 8px 14px;
+    padding: 8px 10px;
     border-radius: 999px;
     font-size: 13px;
     font-weight: 700;
@@ -138,8 +139,8 @@ HERO
     left: -28px;
 }
 .chip-right{
-    right: -59px;
-    top: 45%;
+    right: -28px;
+    top: 60%;
 }
 .chip-bottom{
     bottom: 8%;
@@ -159,4 +160,5 @@ ip:nth-child(2){
 .chip:nth-child(3){
     animation-delay: 1s;
 }
+
 
