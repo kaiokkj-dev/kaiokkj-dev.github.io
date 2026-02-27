@@ -13,24 +13,20 @@ HEADER
     justify-content: space-between;
     padding: 16px 0;
 }
-
 .header h1{
     font-size: 25px;
     letter-spacing: 0.5px;
     margin-left: 15px;
 }
-
 .header nav{
     display: flex;
     gap: 14px;
     margin-left: 15px;
 }
-
 .header nav a{
     color: var(--muted);
     font-size: 14px;
 }
-
 .header nav a:hover{
     color: var(--green);
 }

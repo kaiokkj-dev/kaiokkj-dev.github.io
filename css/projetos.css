@@ -5,7 +5,6 @@ PROJETOS
     padding: 80px 0 45px;
     text-align: center;
 }
-
 .projetos h2{
     font-size: 32px;
     margin-bottom: 36px;
@@ -13,7 +12,6 @@ PROJETOS
     position: relative;
     display: inline-block;
 }
-
 .projetos h2::after{
     content: "";
     position: absolute;
@@ -24,14 +22,12 @@ PROJETOS
     background: var(--green);
     border-radius: 4px;
 }
-
 .projetos-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 16px;
     text-align: left;
 }
-
 /* CARD */
 .card{
     background: linear-gradient(145deg, rgba(40, 61, 56, 0.637), rgb(8, 10, 10));
@@ -45,12 +41,10 @@ PROJETOS
     height: 100%;
     width: 100%;
 }
-
 .card:hover{
     transform: translateY(-10px);
     border-color: var(--green);
 }
-
 .card h3{
     margin-bottom: 12px;
     font-size: 20px;
@@ -58,12 +52,10 @@ PROJETOS
     letter-spacing: 0.3px;
     text-shadow: 1px 3px 0px black;
 }
-
 .card p{
     color: var(--muted);
     margin-bottom: 16px;
 }
-
 .card-img{
     width: 100%;
     height: 290px;
@@ -73,12 +65,10 @@ PROJETOS
     transition: 0.3s ease;
     object-fit: cover;
 }
-
 .card:hover .card-img{
     opacity: 1;
     transform: scale(1.02);
 }
-
 /* TAGS */
 .tags{
     display: flex;
@@ -86,7 +76,6 @@ PROJETOS
     flex-wrap: wrap;
     margin-top: 10px;
 }
-
 .tags span{
     display: inline-flex;
     align-items: center;
@@ -100,14 +89,12 @@ PROJETOS
 /* =========================
 ACTIONS (BOTÕES DOS CARDS)
 ========================= */
-
 .actions{
     display: flex;
     gap: 10px;
     margin-top: 6px;
     flex-wrap: wrap;
 }
-
 /* Botão com efeito sweep */
 .btn-sweep{
     position: relative;
@@ -127,7 +114,6 @@ ACTIONS (BOTÕES DOS CARDS)
     transition: color .25s ease, transform .18s ease, box-shadow .25s ease;
     z-index: 1;
 }
-
 .btn-sweep::before{
     content: "";
     position: absolute;
@@ -137,35 +123,29 @@ ACTIONS (BOTÕES DOS CARDS)
     transition: transform .35s ease;
     z-index: 0;
 }
-
 /* garante que texto fique acima do ::before */
 .btn-sweep > *{
     position: relative;
     z-index: 1;
 }
-
 /* Hover padrão */
 .btn-sweep:not(.outline):hover{
     color: var(--text);
     transform: translateY(-2px);
     box-shadow: 0 12px 26px rgba(0,0,0,0.45);
 }
-
 .btn-sweep:hover::before{
     transform: translateX(0);
 }
-
 /* Versão outline (GitHub) */
 .btn-sweep.outline{
     background: transparent;
     color: var(--text);
     border: 2px solid var(--green);
 }
-
 .btn-sweep.outline::before{
     background: var(--green);
 }
-
 .btn-sweep:hover.outline{
     color: #06110b;
     transform: translateY(-2px);

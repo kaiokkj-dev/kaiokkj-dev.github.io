@@ -6,7 +6,6 @@ TECH SLIDER
     justify-content: center;
     margin-top: 40px;
 }
-
 .tech-surface{
     overflow: hidden;
     width: min(420px, 480px);
@@ -17,7 +16,6 @@ TECH SLIDER
     backdrop-filter: blur(6px);
     position: relative;
 }
-
 .tech-surface::before{
     content: "";
     position: absolute;
@@ -27,18 +25,15 @@ TECH SLIDER
     pointer-events: none;
     z-index: 0; 
 }
-
 .tech-track{
     display: flex;
     align-items: center;
     width: max-content;
     animation: marquee 20s linear infinite;
 }
-
 .tech-surface:hover .tech-track{
     animation-play-state: paused;
 }
-
 .tech-track i{
     font-size: 34px;
     margin-right: 56px;
@@ -46,12 +41,10 @@ TECH SLIDER
     filter: drop-shadow(0 6px 14px rgba(34,197,94,0.25));
     transition: .2s ease;
 }
-
 .tech-track i:hover{
     transform: translateY(-4px) scale(1.12);
     filter: drop-shadow(0 8px 18px rgba(34,197,94,0.45));
 }
-
 @keyframes marquee{
     from { transform: translateX(0); }
     to { transform: translateX(-50%); }

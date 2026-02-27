@@ -6,7 +6,6 @@ SOBRE
     text-align: left;
     font-weight: 500;
 }
-
 .sobre h2{
     font-size: 38px;
     margin-bottom: 40px;
@@ -15,7 +14,6 @@ SOBRE
     position: relative;
     display: inline-block;
 }
-
 .sobre h2::after{
     content: "";
     position: absolute;
@@ -25,7 +23,6 @@ SOBRE
     height: 3px;
     background: var(--green);
 }
-
 .about-text{
     font-size: 18px;
     font-weight: 400;

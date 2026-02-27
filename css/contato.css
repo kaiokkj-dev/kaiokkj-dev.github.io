@@ -1,0 +1,77 @@
+/* ===== CONTATO ===== */
+.contact {
+    padding: 10px 0;
+    text-align: center;
+}
+.contact-card{
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 60px 34px;
+    text-align: center;
+    /* fundo com glow suave */
+    background:
+        radial-gradient(80% 80% at 50% 0%, rgba(34,197,94,.14) 0%, rgba(34,197,94,0) 60%),
+        linear-gradient(180deg, rgba(16,24,22,.92), rgba(16,24,22,.70));
+    border: 1px solid rgba(34,197,94,.18);
+    border-radius: 22px;
+    box-shadow:
+        0 24px 80px rgba(0,0,0,.45),
+        inset 0 1px 0 rgba(255,255,255,.04);
+}
+.contact-card h2 {
+    font-size: 36px;
+    letter-spacing: -0.02em;
+}
+.contact-card h2::after{
+    content:"";
+    display:block;
+    width: 293px;
+    height: 3px;
+    background: var(--green);
+    margin: 14px auto 12px;
+    border-radius: 999px;
+}
+.contact-card p{
+    max-width: 720px;
+    margin: 0 auto 34px;
+    color: var(--muted);
+    line-height: 1.60;
+}
+.contact-actions{
+    display:flex;
+    justify-content:center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+.contact-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding: 12px 26px;
+    border-radius: 999px;
+    text-decoration:none;
+    font-weight: 600;
+    font-size: 14px;
+    border: 1px solid var(--border);
+    color: var(--text);
+    background: transparent;
+    transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease, color .2s ease;
+}
+.contact-btn.primary{
+    background: rgba(34,197,94,.16);
+    border-color: rgba(34,197,94,.55);
+    color: var(--text);
+}
+
+.contact-btn.primary:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 16px 36px rgba(0,0,0,.35);
+    border-color: rgba(34,197,94,.75);
+}
+.contact-btn:not(.primary):hover{
+    transform: translateY(-2px);
+    border-color: rgba(34,197,94,.55);
+    color: var(--green);
+    box-shadow: 0 16px 36px rgba(0,0,0,.30);
+}
+
