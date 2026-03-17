@@ -16,15 +16,6 @@ FORMACAO
     display: inline-block;
     text-align: left;
 }
-.educacao .section-head h2::after{
-    content:"";
-    display:block;
-    width: 145px;
-    height: 3px;
-    background: var(--green);
-    margin-top: -5px;
-    border-radius: 2px;
-}
 .edu-grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);

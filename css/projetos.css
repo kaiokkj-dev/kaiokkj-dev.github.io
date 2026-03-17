@@ -6,21 +6,11 @@ PROJETOS
     text-align: center;
 }
 .projetos h2{
-    font-size: 32px;
+    font-size: 36px;
     margin-bottom: 36px;
     letter-spacing: 0.5px;
     position: relative;
     display: inline-block;
-}
-.projetos h2::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0px;
-    width: 225px;
-    height: 3px;
-    background: var(--green);
-    border-radius: 4px;
 }
 .projetos-container{
     display: grid;
