@@ -45,6 +45,7 @@ PROJETOS
 .card p{
     color: var(--muted);
     margin-bottom: 16px;
+    min-height: 120px;
 }
 .card-img{
     width: 100%;
@@ -60,31 +61,33 @@ PROJETOS
     transform: scale(1.02);
 }
 /* TAGS */
-.tags{
-    display: flex;
-    gap: 8px;
-    flex-wrap: wrap;
-    margin-top: 10px;
-}
-.tags span{
+    .tags span {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
+    height: 34px;
+    padding: 0 12px;
     line-height: 1;
-    padding: 6px 12px;
     border-radius: 8px;
     font-size: 14px;
     border: 2px solid var(--border);
     color: var(--text);
-}
-/* =========================
-ACTIONS (BOTÕES DOS CARDS)
-========================= */
-.actions{
+    box-sizing: border-box;
+    }
+    .actions {
+    margin-top: auto;
     display: flex;
-    gap: 10px;
-    margin-top: 6px;
-    flex-wrap: wrap;
-}
+    gap: 12px;
+    padding-top: 18px;
+    }
+    .actions a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 44px;
+    box-sizing: border-box;
+    }
 /* Botão com efeito sweep */
 .btn-sweep{
     position: relative;
