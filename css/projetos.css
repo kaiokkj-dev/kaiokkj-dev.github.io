@@ -14,7 +14,7 @@ PROJETOS
 }
 .projetos-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 16px;
     text-align: left;
 }
@@ -45,7 +45,7 @@ PROJETOS
 .card p{
     color: var(--muted);
     margin-bottom: 16px;
-    min-height: 120px;
+    min-height: 10px;
 }
 .card-img{
     width: 100%;
@@ -60,13 +60,20 @@ PROJETOS
     opacity: 1;
     transform: scale(1.02);
 }
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  max-width: 100%;
+}
+
 /* TAGS */
     .tags span {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    height: 34px;
-    padding: 0 12px;
+    height: 30px;
+    padding: 0 8px;
     line-height: 1;
     border-radius: 8px;
     font-size: 14px;
@@ -75,7 +82,7 @@ PROJETOS
     box-sizing: border-box;
     }
     .actions {
-    margin-top: auto;
+    margin-top: 2px;
     display: flex;
     gap: 12px;
     padding-top: 18px;

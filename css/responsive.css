@@ -11,7 +11,9 @@ TABLET (até 768px)
     gap: 36px;
     padding: 100px 0 10px;
   }
-
+  .projetos-container {
+    grid-template-columns: 1fr;
+  }
   .hero-right{
     order: 0;
     width: 100%;
