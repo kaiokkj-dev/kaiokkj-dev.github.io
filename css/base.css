@@ -13,13 +13,19 @@ THEME
 }
 /* =========================
 RESET / BASE
-========================= */
+========================= */ 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+body.dark{
+    background: var(--bg);
+    color: var(--text);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    line-height: 1.6;
+}
+body.light{
     background: var(--bg);
     color: var(--text);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -44,4 +50,151 @@ html{
 .reveal-visible{
     opacity: 1;
     transform: translateY(0) scale(1);
+}
+/* =========================
+LIGHT THEME
+========================= */
+body.light {
+  --bg: #f5f7f6;
+  --surface: #ffffff;
+  --border: #d1e7dd;
+  --text: #0f172a;
+  --muted: #6b7280;
+  --green: #16a34a;
+}
+/* HEADER */
+body.light .nav-pill {
+  background: rgba(255,255,255,0.75);
+  border-color: rgba(15,23,42,.10);
+  box-shadow:
+    0 10px 40px rgba(15,23,42,.12),
+    inset 0 1px 0 rgba(255,255,255,.8);
+}
+body.light .nav-icon {
+  border-right-color: rgba(15,23,42,.18);
+}
+body.light .nav-icon:hover {
+  background: rgba(22,163,74,.08);
+}
+body.light .nav-btn.active {
+  background: rgba(255,255,255,.65);
+  box-shadow: inset 0 0 0 1px rgba(15,23,42,.08);
+}
+/* HERO */
+body.light .btn-primary {
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(15,23,42,.12);
+}
+body.light .btn-primary:hover {
+  background: var(--green);
+  color: #ffffff;
+}
+body.light .btn-icon {
+  background: rgba(22,163,74,.10);
+}
+body.light .avatar-wrap {
+  background:
+    radial-gradient(circle at 30% 20%, rgba(22,163,74,.14), transparent 55%),
+    rgba(255,255,255,.75);
+  box-shadow: 0 20px 60px rgba(15,23,42,.14);
+}
+body.light .chip {
+  background: rgba(255,255,255,.85);
+  border-color: rgba(22,163,74,.25);
+  box-shadow: 0 8px 25px rgba(15,23,42,.13);
+}
+/* SOBRE / FORMAÇÃO */
+body.light .sobre h2,
+body.light .educacao h2 {
+  text-shadow: 0px 3px 0px rgba(15,23,42,.12);
+}
+body.light .edu-card:hover {
+  box-shadow: 0 18px 40px rgba(15,23,42,.13);
+}
+body.light .edu-icon {
+  color: var(--green);
+  background: rgba(22,163,74,.10);
+}
+/* PROJETOS */
+body.light .card {
+  background: linear-gradient(145deg, rgba(255,255,255,.95), rgba(245,247,246,.85));
+}
+body.light .card:hover {
+  box-shadow: 0 18px 40px rgba(15,23,42,.12);
+}
+body.light .card h3 {
+  text-shadow: 1px 2px 0px rgba(15,23,42,.08);
+}
+body.light .tags span {
+  background: rgba(22,163,74,.06);
+}
+body.light .btn-sweep{
+    color: #ffffff;
+    background: var(--green);
+    border: 2px solid rgba(22,163,74,0.25);
+}
+/* ESSENCIAL PRO SWEEP */
+body.light .btn-sweep::before{
+    background: #ffffff;
+    transform: translateX(-110%);
+}
+/* ESSENCIAL PRO SWEEP */
+body.light .btn-sweep:hover::before{
+    transform: translateX(0);
+}
+/* hover */
+body.light .btn-sweep:not(.outline):hover{
+    color: var(--text);
+    box-shadow: 0 12px 26px rgba(15,23,42,.12);
+}
+/* outline */
+body.light .btn-sweep.outline{
+    background: transparent;
+    color: var(--text);
+    border: 2px solid var(--green);
+}
+body.light .btn-sweep.outline::before{
+    background: var(--green);
+}
+body.light .btn-sweep:hover.outline{
+    color: #ffffff;
+}
+/* TECH SLIDER */
+body.light .tech-surface {
+  background: linear-gradient(145deg, rgba(255,255,255,.95), rgba(245,247,246,.9));
+  border-color: rgba(22,163,74,.22);
+  box-shadow: 0 20px 50px rgba(15,23,42,.12);
+}
+body.light .tech-surface::before {
+  background: linear-gradient(120deg, rgba(22,163,74,.08), transparent, rgba(22,163,74,.06));
+}
+/* CONTATO */
+body.light .contact-card {
+  background:
+    radial-gradient(80% 80% at 50% 0%, rgba(22,163,74,.12) 0%, rgba(22,163,74,0) 60%),
+    linear-gradient(180deg, rgba(255,255,255,.96), rgba(245,247,246,.85));
+  border-color: rgba(22,163,74,.18);
+  box-shadow:
+    0 24px 80px rgba(15,23,42,.12),
+    inset 0 1px 0 rgba(255,255,255,.8);
+}
+body.light .contact-btn {
+  background: #ffffff;
+}
+body.light .contact-btn.primary {
+  background: rgba(22,163,74,.12);
+  border-color: rgba(22,163,74,.55);
+}
+body.light .contact-btn.primary:hover {
+  box-shadow: 0 16px 36px rgba(15,23,42,.14);
+}
+body.light .contact-btn:not(.primary):hover {
+  box-shadow: 0 16px 36px rgba(15,23,42,.12);
+}
+/* FOOTER */
+body.light .footer-icons a {
+  background: #ffffff;
+}
+body.light .footer-icons a:hover {
+  box-shadow: 0 10px 20px rgba(15,23,42,.12);
 }

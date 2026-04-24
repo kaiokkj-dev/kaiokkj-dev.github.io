@@ -31,6 +31,7 @@ HEADER PILL
     justify-content: center;
     transition: .2s ease;
     border-right: 1px solid rgba(255, 255, 255, 0.281);
+    
 }
 .nav-icon:last-of-type{
     border-right: none;
@@ -51,4 +52,16 @@ HEADER PILL
 .nav-btn.active{
     background: rgba(0,0,0,0.4);
     box-shadow: inset 0 0 0 1px rgba(255,255,255,0.08);
+}
+#theme-toggle {
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    color: inherit;
+    width: 46px;
+    height: 46px;
+    display: grid;
+    place-items: center;
+    color: var(--muted);
 }

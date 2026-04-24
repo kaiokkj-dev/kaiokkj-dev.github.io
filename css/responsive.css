@@ -170,7 +170,16 @@ MOBILE (até 480px)
   .contact-card h2::after{
     width: 0;
   }
+  .nav-btn{
+    padding: 14px 10px;
+    margin-left: 6px;
+    border-radius: 999px;
+    color: var(--text);
+    text-decoration: none;
+    transition: .2s ease;
 }
+}
+
 /* ===================================================
   ESTILO GLOBAL (fora das medias)
 =================================================== */
