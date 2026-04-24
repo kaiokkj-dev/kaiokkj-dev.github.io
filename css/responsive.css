@@ -170,14 +170,7 @@ MOBILE (até 480px)
   .contact-card h2::after{
     width: 0;
   }
-  .nav-btn{
-    padding: 7px 2px;
-    margin-left: 3px;
-    border-radius: 999px;
-    color: var(--text);
-    text-decoration: none;
-    transition: .2s ease;
-}
+
 }
 
 /* ===================================================
