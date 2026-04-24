@@ -171,8 +171,8 @@ MOBILE (até 480px)
     width: 0;
   }
   .nav-btn{
-    padding: 14px 10px;
-    margin-left: 6px;
+    padding: 7px 2px;
+    margin-left: 3px;
     border-radius: 999px;
     color: var(--text);
     text-decoration: none;
