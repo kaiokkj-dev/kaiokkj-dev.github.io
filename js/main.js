@@ -55,3 +55,23 @@ if (themeBtn) {
     applyTheme(newTheme);
   });
 }
+const btnMostrar = document.getElementById("mostrarMais");
+const projetosEscondidos = document.querySelectorAll(".hidden-project");
+
+let aberto = false;
+
+btnMostrar.addEventListener("click", () => {
+  if (!aberto) {
+    projetosEscondidos.forEach((projeto) => {
+      projeto.style.display = "block";
+    });
+    btnMostrar.textContent = "MOSTRAR MENOS";
+    aberto = true;
+  } else {
+    projetosEscondidos.forEach((projeto) => {
+      projeto.style.display = "none";
+    });
+    btnMostrar.textContent = "MOSTRAR MAIS";
+    aberto = false;
+  }
+});

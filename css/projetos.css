@@ -61,10 +61,10 @@ PROJETOS
     transform: scale(1.02);
 }
 .tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px;
-  max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    max-width: 100%;
 }
 
 /* TAGS */
@@ -149,4 +149,25 @@ PROJETOS
 .btn-sweep:hover.outline{
     color: #06110b;
     transform: translateY(-2px);
+}
+.hidden-project {
+    display: none;
+}
+
+.mostrar-btn {
+    margin: 40px auto 0;
+    display: block;
+    padding: 14px 32px;
+    border: 2px solid var(--border);
+    background: transparent;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    color: var(--text);
+    border-radius: 14px;
+}
+
+.mostrar-btn:hover {
+    transform: scale(1.05);
+    border-color: var(--green);
 }
