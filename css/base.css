@@ -71,7 +71,7 @@ body.light .nav-pill {
     inset 0 1px 0 rgba(255,255,255,.8);
 }
 body.light .nav-icon {
-  border-right-color: rgba(15,23,42,.18);
+  border-right-color: rgba(0, 76, 255, 0.18);
 }
 body.light .nav-icon:hover {
   background: rgba(22,163,74,.08);
