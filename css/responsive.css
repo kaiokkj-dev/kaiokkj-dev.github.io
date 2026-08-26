@@ -86,15 +86,75 @@ TABLET (até 768px)
   }
   /* ---------- CONTATO ---------- */
   .contact-card{
-    padding: 44px 18px;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 42px 30px;
   }
   .contact-card h2{
-    font-size: 28px;
-    margin-bottom: 12px;
-    line-height: 1;
+    font-size: 36px;
+    line-height: 1.08;
   }
   .contact-btn{
-    width: min(420px, 100%);
+    width: 100%;
+  }
+}
+
+/* CONTATO — celulares grandes e telas intermediárias */
+@media (max-width: 600px){
+  .contact{
+    padding-top: 16px;
+  }
+  .contact-card{
+    gap: 20px;
+    padding: 28px 18px 18px;
+    border-radius: 20px;
+  }
+  .contact-card::after{
+    right: -170px;
+    bottom: -175px;
+  }
+  .contact-kicker{
+    gap: 8px;
+    margin-bottom: 15px;
+    font-size: 10px;
+    line-height: 1.45;
+    letter-spacing: .07em;
+  }
+  .contact-card h2{
+    margin-bottom: 15px;
+    font-size: clamp(28px, 7.2vw, 34px);
+    line-height: 1.1;
+  }
+  .contact-card p{
+    font-size: 13.5px;
+    line-height: 1.62;
+  }
+  .contact-actions{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+  .contact-btn{
+    min-height: 58px;
+    padding: 9px 11px;
+    grid-template-columns: 36px minmax(0, 1fr);
+    gap: 9px;
+    border-radius: 13px;
+  }
+  .contact-icon{
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+  }
+  .contact-icon svg{
+    width: 17px;
+    height: 17px;
+  }
+  .contact-btn-copy small,
+  .contact-arrow{
+    display: none;
+  }
+  .contact-btn-copy strong{
+    font-size: 13px;
   }
 }
 /* ===================================================
@@ -167,8 +227,18 @@ MOBILE (até 480px)
     line-height: 1.2;
   }
   /* ---------- CONTATO ---------- */
-  .contact-card h2::after{
-    width: 0;
+  .contact{
+    padding-top: 16px;
+  }
+  .contact-card{
+    padding: 26px 15px 15px;
+    gap: 19px;
+  }
+  .contact-card h2{
+    font-size: clamp(27px, 8.5vw, 31px);
+  }
+  .contact-btn{
+    min-height: 56px;
   }
 
 }
@@ -184,4 +254,10 @@ MOBILE (até 480px)
   background: var(--green);
   margin: 18px auto 10px;
   border-radius: 999px;
+}
+
+@media (max-width: 350px){
+  .contact-actions{
+    grid-template-columns: 1fr;
+  }
 }

@@ -116,26 +116,20 @@
         </p>
 
         <div class="tech-slider">
-          <div class="tech-surface">
-            <div class="tech-track">
-              <i class="devicon-html5-plain"></i>
-              <i class="devicon-css3-plain"></i>
+          <div class="tech-surface" aria-label="Tecnologias principais: JavaScript, Java, Spring, PostgreSQL e Git">
+            <div class="tech-track" aria-hidden="true">
               <i class="devicon-javascript-plain"></i>
+              <i class="devicon-java-plain"></i>
+              <i class="devicon-spring-original"></i>
+              <i class="devicon-postgresql-plain"></i>
               <i class="devicon-git-plain"></i>
-              <i class="devicon-github-original"></i>
-              <i class="devicon-vscode-plain "></i>
-              <i class="devicon-nodejs-plain-wordmark"></i>
-              <i class="devicon-python-plain "></i>
 
               <!-- repetição para loop visual -->
-              <i class="devicon-html5-plain"></i>
-              <i class="devicon-css3-plain"></i>
               <i class="devicon-javascript-plain"></i>
+              <i class="devicon-java-plain"></i>
+              <i class="devicon-spring-original"></i>
+              <i class="devicon-postgresql-plain"></i>
               <i class="devicon-git-plain"></i>
-              <i class="devicon-github-original"></i>
-              <i class="devicon-vscode-plain"></i>
-              <i class="devicon-nodejs-plain-wordmark"></i>
-              <i class="devicon-python-plain"></i>
             </div>
           </div>
         </div>
@@ -169,6 +163,32 @@ Duelo 64 é uma plataforma multiplayer de jogos de estratégia desenvolvida com 
         <a href="https://github.com/kaiokkj-dev/Duelo64" class="btn-sweep outline" target="_blank" rel="noreferrer">
           <span>GitHub ↗</span>
         </a>
+      </div>
+    </article>
+
+    <article class="card">
+      <img src="img/projeto-naregua.png" alt="Preview do projeto NaRégua" class="card-img" />
+      <h3>NaRégua</h3>
+      <p>
+        NaRégua é uma plataforma SaaS de gestão e agendamento para barbearias, reunindo agenda, equipe, serviços e clientes em um só lugar, com criação de conta, autenticação pelo Google e uma experiência responsiva para simplificar a rotina do negócio.
+      </p>
+
+      <div class="tags">
+        <span>NODE.JS</span>
+        <span>EXPRESS</span>
+        <span>JS</span>
+        <span>SUPABASE</span>
+        <span>POSTGRESQL</span>
+      </div>
+
+      <div class="actions">
+        <a href="https://usenaregua.com" class="btn-sweep" target="_blank" rel="noreferrer">
+          <span>Demo ↗</span>
+        </a>
+        <span class="project-private" aria-label="Código-fonte privado">
+          <i data-lucide="lock-keyhole" aria-hidden="true"></i>
+          <span>Privado</span>
+        </span>
       </div>
     </article>
 
@@ -220,7 +240,7 @@ Quest Games é uma plataforma moderna de descoberta de jogos desenvolvida em HTM
       </div>
     </article>
 
-    <article class="card">
+    <article class="card hidden-project">
       <img src="img/2.png" alt="Preview do Projeto WeatherApp" class="card-img" />
       <h3>KKJOpti</h3>
       <p>
@@ -318,7 +338,7 @@ O Weather App é uma aplicação de clima desenvolvida utilizando HTML, CSS e Ja
       </div>
     </article>
   </div>
-  <button id="mostrarMais" class="mostrar-btn">
+  <button id="mostrarMais" class="mostrar-btn" aria-expanded="false">
   MOSTRAR MAIS
 </button>
 </section>
@@ -391,16 +411,27 @@ O Weather App é uma aplicação de clima desenvolvida utilizando HTML, CSS e Ja
     <!-- CONTATO -->
     <section class="contact" id="contato">
       <div class="contact-card">
-        <h2>Vamos Conversar?</h2>
-        <p>
-          Estou aberto a novas oportunidades, projetos freelance e colaborações.
-          Se você busca alguém comprometido com performance, organização e experiência do usuário, vamos conversar.
-        </p>
-
+        <div class="contact-copy">
+          <span class="contact-kicker"><span class="contact-status" aria-hidden="true"></span>Disponível para novos projetos</span>
+          <h2>Tem uma ideia?<br><span>Vamos tirar do papel.</span></h2>
+          <p>
+            Estou aberto a oportunidades, projetos freelance e colaborações. Se você procura alguém que valoriza performance, organização e uma ótima experiência, vamos conversar.
+          </p>
+        </div>
         <div class="contact-actions">
-          <a class="contact-btn primary" href="mailto:kaiohenriquemalaquias@gmail.com">Enviar E-mail</a>
+          <a class="contact-btn primary" href="mailto:kaiohenriquemalaquias@gmail.com">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M4 6.5h16v11H4v-11Z"/><path d="m5 7.5 7 5 7-5"/></svg>
+            </span>
+            <span class="contact-btn-copy"><small>Fale comigo por</small><strong>E-mail</strong></span>
+            <span class="contact-arrow" aria-hidden="true">↗</span>
+          </a>
           <a class="contact-btn" href="https://www.linkedin.com/in/kaiohenrique-dev/" target="_blank" rel="noreferrer">
-            LinkedIn
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M6.5 9.5V18M6.5 6.25v.1M10.5 18v-4.75c0-2 1.25-3.25 3-3.25s3 1.25 3 3.25V18M10.5 10.25V18"/></svg>
+            </span>
+            <span class="contact-btn-copy"><small>Conecte-se no</small><strong>LinkedIn</strong></span>
+            <span class="contact-arrow" aria-hidden="true">↗</span>
           </a>
         </div>
       </div>

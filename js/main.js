@@ -63,15 +63,17 @@ let aberto = false;
 btnMostrar.addEventListener("click", () => {
   if (!aberto) {
     projetosEscondidos.forEach((projeto) => {
-      projeto.style.display = "block";
+      projeto.style.display = "flex";
     });
     btnMostrar.textContent = "MOSTRAR MENOS";
+    btnMostrar.setAttribute("aria-expanded", "true");
     aberto = true;
   } else {
     projetosEscondidos.forEach((projeto) => {
       projeto.style.display = "none";
     });
     btnMostrar.textContent = "MOSTRAR MAIS";
+    btnMostrar.setAttribute("aria-expanded", "false");
     aberto = false;
   }
 });
